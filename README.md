@@ -65,13 +65,34 @@ MODEL GRAPH:
 
 
 Program
-
+```
+Am=5.9;
+fm=466;
+fs=46600;
+Ac=11.8;
+fc=4660;
+t=0:1/fs:2/fm;
+b=6;
+m=Am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t,m);
+c=Ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t,c);
+s=Ac*cos(2*3.14*fc*t+b*sin(2*3.14*fm*t));
+subplot(3,1,3);
+plot(t,s);
+```
 
 Output Waveform
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/bf01f365-080f-4d50-bfc3-3f278dd6b7bd" />
+
 
 
 
 Tabulation
+<img width="1214" height="732" alt="image" src="https://github.com/user-attachments/assets/bb367fd4-4db8-432f-a514-73c770b0cb6d" />
+
 
 
 
